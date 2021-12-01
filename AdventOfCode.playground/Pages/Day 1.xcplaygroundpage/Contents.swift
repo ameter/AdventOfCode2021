@@ -2038,10 +2038,7 @@ var result = 0
 for (idx, measurement) in input.enumerated() {
     if idx + 3 == input.count { break }
     
-    let a = measurement + input[idx + 1] + input[idx + 2]
-    let b = input[idx + 1] + input[idx + 2] + input[idx + 3]
-    
-    if a < b {
+    if measurement < input[idx + 3] {
         result += 1
     }
 }
