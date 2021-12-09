@@ -77,4 +77,4 @@ for row in 0..<input.count {
     }
 }
 
-dump(basinSizes.sorted{$0 > $1}[0..<3].reduce(1, *))
+print(basinSizes.sorted{$0 > $1}[0..<3].reduce(1, *))
